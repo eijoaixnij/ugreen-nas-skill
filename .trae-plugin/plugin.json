@@ -1,0 +1,36 @@
+{
+  "name": "ugreen-nas",
+  "version": "0.1.0",
+  "description": "绿联NAS (UGREEN NAS / UGOS Pro) 管理与文件操作助手，通过私有API实现系统监控、文件管理、下载上传等能力",
+  "author": {
+    "name": "eijoaixnij"
+  },
+  "license": "MIT",
+  "keywords": [
+    "ugreen",
+    "nas",
+    "ugos",
+    "nasync",
+    "file-management"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "绿联NAS助手",
+    "shortDescription": "通过私有API管理绿联NAS：系统监控、文件浏览/上传/下载/删除、存储状态等",
+    "longDescription": "绿联NAS (UGREEN NAS / UGOS Pro) 管理助手。支持登录认证、系统信息查询（CPU/内存/温度/存储/网络）、文件管理（列表/创建/复制/移动/重命名/上传/下载/删除/回收站）等操作。基于 UGOS Pro 私有 HTTP API 实现，非官方SDK。",
+    "developerName": "eijoaixnij",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Use ugreen-nas skill to manage the UGREEN NAS."
+    ],
+    "brandColor": "#2E7D32",
+    "composerIcon": "./assets/icon.svg",
+    "logo": "./assets/icon.svg",
+    "screenshots": []
+  }
+}
