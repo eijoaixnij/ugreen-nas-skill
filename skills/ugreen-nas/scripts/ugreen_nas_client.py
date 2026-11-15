@@ -38,6 +38,8 @@ class UgreenNASClient:
         token = resp.headers.get("x-rsa-token")
         if not token:
             raise RuntimeError("响应头中未找到 x-rsa-token")
+        if "BEGIN" not in token:
+            token = base64.b64decode(token).decode()
         return token
 
     def login(self) -> dict:
